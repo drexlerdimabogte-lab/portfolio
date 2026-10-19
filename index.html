@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Richard Romero — eCommerce & Web Designer</title>
+<meta name="description" content="Richard Romero — Amazon / eCommerce graphic designer and front-end web designer based in Taguig, Philippines.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo+Narrow:wght@500;700&family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;500&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+</head><body>
+<div class="cursor" id="cursor"><span></span></div>
+
+<header class="top">
+  <a href="#" class="name">Richard<br>Romero</a>
+  <a href="#" class="mono" aria-label="Home">RR</a>
+  <div class="tr"><a href="#contact" class="btn">Hire me <i>↗</i></a><button class="menu" id="menuBtn" aria-label="Menu"><span></span><span></span></button></div>
+</header>
+<nav class="overlay" id="overlay">
+  <a href="#about">About</a><a href="#work">Work</a><a href="#services">Services</a><a href="#toolkit">Toolkit</a><a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="hero">
+  <canvas id="topo"></canvas>
+  <div class="scroll-down"><span>Scroll down</span><i></i></div>
+  <div class="hero-big" aria-hidden="true"><span>ECOM</span><span>DESIGN</span></div>
+  <figure class="portrait">
+    <img src="img/portrait.webp" alt="Richard Romero" width="1053" height="1100" fetchpriority="high">
+  </figure>
+  <canvas id="heroGL"></canvas>
+  <div class="hero-meta l"><b>eCommerce / Amazon</b>Graphic designer &amp;<br>front-end web designer</div>
+  <div class="hero-meta r"><b>Based in</b>Taguig, Philippines<br>14.52° N, 121.05° E</div>
+</section>
+
+<section class="dark card" id="about">
+  <div class="streaks"></div>
+  <div class="about-in">
+    <p class="kicker">(01) About</p>
+    <blockquote class="quote split">“I design the first thing a shopper sees — and the reason they click <em>add to cart</em>.”</blockquote>
+    <div class="about-row">
+      <figure class="inset"><img src="img/about-bw.webp" alt="Richard Romero, black and white portrait" width="640" height="800" loading="lazy"><figcaption>Studio · Taguig, PH</figcaption><svg class="sig" viewBox="0 0 520 170" aria-hidden="true"><text x="10" y="128" id="sig">Richard</text></svg></figure>
+      <div class="about-txt">
+        <p>Seven-ish years of listing images, A+ content, product ads and storefronts for Amazon and Shopify brands — plus the websites that sell them. Photoshop and Figma for the craft, CapCut and Canva for speed, HTML/CSS/JS to ship, and AI image/video to explore.</p>
+        <ul class="about-meta"><li><b>Focus</b>Amazon listings · A+ · Ads</li><li><b>Also</b>Landing pages · Shopify</li><li><b>Based</b>Taguig, PH · Remote</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="statement" id="statement">
+  <p class="st">Listings that <span class="hl">convert</span>, A+ pages that tell a <span class="hl">brand story</span>, ads that stop the <span class="hl">scroll</span> — and websites that are <span class="hl">fast</span>, clean and built to <span class="hl">sell</span>.</p>
+</section>
+
+<section class="work" id="work">
+  <div class="work-head"><p class="kicker">(02) Selected projects</p><h2 class="h2">Work that <em>moves</em> product.</h2><a class="ext" href="https://www.behance.net/richardromero23" target="_blank" rel="noopener">Full case studies on Behance ↗</a></div>
+  <div class="gal" id="gal"></div>
+  <p class="note">All mockups on this page are generated placeholders — swap in real projects in <code>projects.js</code>.</p>
+</section>
+
+<section class="services" id="services">
+  <a class="col" href="https://www.behance.net/richardromero23" target="_blank" rel="noopener">
+    <span class="idx">(A)</span><h3>Design</h3>
+    <ul><li>Amazon main &amp; infographic images</li><li>A+ / Premium A+ content</li><li>Social &amp; product ads</li><li>Storefront &amp; brand kits</li><li>AI image / video concepts</li></ul>
+    <span class="circ"><i>↗</i></span></a>
+  <a class="col" href="#contact">
+    <span class="idx">(B)</span><h3>Web</h3>
+    <ul><li>Landing pages &amp; Shopify themes</li><li>HTML / CSS / JS builds</li><li>Figma to responsive site</li><li>Scroll &amp; motion interactions</li><li>Speed &amp; conversion tune-ups</li></ul>
+    <span class="circ"><i>↗</i></span></a>
+</section>
+
+<section class="dark toolkit" id="toolkit">
+  <div class="tk-head"><p class="kicker">(03) Toolkit</p><h2 class="h2">The <em>toolkit</em>.</h2><p class="tk-hint" id="tkHint">Move your cursor — everything follows.</p></div>
+  <div class="tk-grid" id="tkGrid"></div>
+</section>
+
+<section class="contact" id="contact">
+  <p class="kicker">(04) Contact</p>
+  <h2 class="big"><a href="mailto:hello@example.com">Let’s make it <em>sell.</em></a></h2>
+  <div class="c-row">
+    <a href="mailto:hello@example.com">hello@example.com <small>(placeholder)</small></a>
+    <a href="https://www.behance.net/richardromero23" target="_blank" rel="noopener">Behance ↗</a>
+    <span>Taguig, PH · GMT+8 · Open to remote</span>
+  </div>
+  <footer><span>© 2026 Richard Romero</span><span id="clock">—</span><a href="#" id="toTop">Back to top ↑</a></footer>
+</section>
+<script type="module" src="main.js"></script>
+</body></html>
